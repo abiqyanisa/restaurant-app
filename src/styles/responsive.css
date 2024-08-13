@@ -1,0 +1,91 @@
+@media screen and (min-width: 300px) {
+  .restaurant {
+    height: 100vw;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .restaurant {
+    height: 80vw;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 200px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-470px, 105px);
+    transform: translate(-470px, 105px);
+  }
+  .open,
+  .nav:focus {
+    -webkit-transform: translate(0px, 105px);
+    transform: translate(0px, 105px);
+  }
+  .nav_item {
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+  }
+  .restaurant-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .res {
+    flex-direction: column;
+    gap: 5%;
+  }
+  .res-info {
+    padding: 50% 5% 7% 5%;
+  }
+  .res-desc h2 {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #menuButton {
+    display: none;
+  }
+  .restaurant-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .restaurant {
+    height: 45vw;
+  }
+  main {
+    padding: 5% 3%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav_list {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .restaurant-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .restaurant {
+    height: 30vw;
+  }
+  main {
+    padding: 5% 5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 5% 10%;
+  }
+  .restaurant {
+    height: 25vw;
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "id": "restaurant-list-pwa-2",
+    "start_url": "./index.html",
+    "name": "Restaurant List",
+    "short_name": "Resto List",
+    "description": "Submission 2",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#43567f",
+    "screenshots": [
+        {
+         "src": "icons/icon.png",
+          "sizes": "320x320",
+          "type": "image/png",
+          "form_factor": "wide",
+          "label": "Desktop"
+        }
+    ]
+  }
